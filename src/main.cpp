@@ -17,6 +17,6 @@ int main() {
     else if(command == "exit"){
       break;
     }
-    else std::cout << command << ": command not found\n";
+    else std::cout << command << ": command not found" << std::endl;
   }
 }
