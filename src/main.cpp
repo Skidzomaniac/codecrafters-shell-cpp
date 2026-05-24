@@ -9,16 +9,14 @@ int main() {
   // TODO: Uncomment the code below to pass the first stage
   while(1){
     std::cout << "$ ";
-    std::string input;
-    std::cin >> input;
-    if(input=="echo"){
-      std::string output;
-      std::cin >> output;
-      std::cout << output << '\n';
+    std::string command;
+    std::getline(std::cin, command);
+    if(command.substr(0, 5) == "echo"){
+      std::cout << command.substr(5) << std::endl;
     }
-    else if(input=="exit"){
+    else if(command == "exit"){
       break;
     }
-    else std::cout << input << ": command not found\n";
+    else std::cout << command << ": command not found\n";
   }
 }
