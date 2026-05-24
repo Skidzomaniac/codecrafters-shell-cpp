@@ -18,10 +18,10 @@ int main() {
       if(command.substr(5) == "type"){
         std::cout << "type is a shell builtin" << std::endl;
       }
-      if(command.substr(5) == "echo"){
+      else if(command.substr(5) == "echo"){
         std::cout << "echo is a shell builtin" << std::endl;
       }
-      if(command.substr(5) == "exit"){
+      else if(command.substr(5) == "exit"){
         std::cout << "exit is a shell builtin" << std::endl;
       }
       else{
