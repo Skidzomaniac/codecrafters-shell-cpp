@@ -11,7 +11,7 @@ int main() {
     std::cout << "$ ";
     std::string command;
     std::getline(std::cin, command);
-    if(command.substr(0, 5) == "echo"){
+    if(command.substr(0, 5) == "echo "){
       std::cout << command.substr(5) << std::endl;
     }
     else if(command == "exit"){
